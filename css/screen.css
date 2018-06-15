@@ -1,0 +1,1399 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"); /* Social Media Icon*/
+/************************************************************************************
+BACKGROUND AND FONT SETTINGS
+*************************************************************************************/
+body, html {
+	height: 100%;
+}
+body {
+	font-family: 'Cabin', sans-serif;
+	background-color: #121212;
+	color: #FDFDFD;
+	line-height: 1.6em;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.page {
+	position: absolute;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+/************************************************************************************
+TYPOGRAPHY
+*************************************************************************************/
+h1 {
+	font-size: 65px;
+	font-weight: 400;
+	color: #FDFDFD;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+h2 {
+	font-size: 35px;
+	font-weight: 300;
+	color: #FDFDFD;
+}
+h3 {
+	font-size: 28px;
+	font-weight: 200;
+	color: #FDFDFD;
+}
+p {
+	font-size: 18px;
+	font-weight: 100;
+	color: #FDFDFD;
+	line-height: 1.6em;
+}
+a {
+	text-decoration: none;
+}
+/************************************************************************************
+HOME HEADER
+*************************************************************************************/
+#head-container .logo {
+	position: absolute;
+	top: 20px;
+	left: 34px;
+	z-index: 1000;
+}
+.top-nav {
+	position: absolute;
+	width: 100%;
+	height: 75px;
+	z-index: 900;
+	margin: 0;
+	padding: 0;
+	opacity: 0.95;
+}
+.top-nav a {
+	float: left;
+	display: inline-block;
+	text-decoration: none;
+}
+.top-nav a:hover {
+	transition: opacity 300ms;
+	-webkit-transition: opacity 300ms;
+	-o-transition: opacity 300ms;
+	-ms-transition: opacity 300ms;
+	-moz-transition: opacity 300ms;
+	color: #BABABA;
+}
+.menu {
+	position: absolute;
+	top: 30px;
+	right: 40px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.menu li a {
+	text-transform: uppercase;
+	font-size: 13px;
+	text-decoration: none;
+	color: #ffffff;
+	transition: opacity 300ms;
+	-webkit-transition: opacity 300ms;
+	-o-transition: opacity 300ms;
+	-ms-transition: opacity 300ms;
+	-moz-transition: opacity 300ms;
+	letter-spacing: 4px;
+	cursor: pointer;
+}
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu ul li {
+	display: block;
+	position: relative;
+	float: left;
+	top: 20px;
+}
+.menu ul li a {
+	display: inline-block;
+	text-decoration: none;
+	white-space: nowrap;
+	border-top: 1px solid #fff;
+	padding: 5px 15px 5px 15px;
+	margin-left: 1px;
+	width: 80%;
+}
+.menu li ul {
+	display: none;
+}
+.menu li {
+	display: inline-block;
+	margin: 0px 15px;
+	vertical-align: top;
+}
+.menu li:hover li {
+	float: none;
+}
+.menu li:hover ul {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 24%;
+}
+/************************************************************************************
+HERO HOME PAGE
+*************************************************************************************/
+.hero-text {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.hero-image {
+	height: 100vh;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.hero-text #year {
+	letter-spacing: 20px;
+}
+.hero-text #text-tour {
+	letter-spacing: 10px;
+	line-height: 1.3em;
+}
+/************************************************************************************
+BUTTONS
+*************************************************************************************/
+.btn-default {
+	border: solid 2px #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 0;
+	height: 40px;
+	padding: 7px 15px 7px;
+	background: none;
+}
+.btn-default:hover {
+	color: #BABABA;
+}
+.all-button {
+	padding: 20px;
+	text-align: center;
+}
+/************************************************************************************
+SECTIONS 
+*************************************************************************************/
+.section-heading {
+	text-transform: uppercase;
+	padding: 15px 0;
+	letter-spacing: 8px;
+}
+.grey-bar {
+	width: 100%;
+	height: 100px;
+	background-color: #262626;
+}
+.music-wrap .album .album-title {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding: 25px;
+}
+.album-art {
+	padding-top: 20px;
+}
+.music-wrap {
+	left: 50%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.music.page {
+	position: relative;
+}
+/************************************************************************************
+TABLES
+*************************************************************************************/
+#table-event {
+	margin: 0 auto;
+	letter-spacing: 2px;
+	padding-bottom: 10px;
+	width: 80%;
+}
+.body-container {
+	text-align: center;
+	display: block;
+	max-width: 1200px;
+	width: 100%;
+	padding-bottom: 20px;
+	align-content: center;
+	margin: 0 auto;
+}
+#table-event .row-hover .event-tickets a {
+	text-decoration: none;
+	color: #fff;
+}
+#table-event .row-hover .event-tickets a:hover {
+	color: #BABABA;
+}
+.table-row {
+	width: 100%;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+}
+.event-date {
+	width: 18%;
+}
+td.event-date {
+	text-align: center;
+}
+.event-venue {
+	width: auto;
+}
+.event-location {
+	width: 27%;
+}
+.event-tickets {
+	float: right;
+}
+.event-list {
+	width: 60%;
+	left: 45%;
+	margin: 0 auto;
+	text-align: center;
+}
+.event.page {
+	position: relative;
+	padding-bottom: 10px;
+}
+.event-container {
+	margin: 0 auto;
+}
+tbody.row-hover {
+	padding-left: 0;
+}
+/************************************************************************************
+FOOTER 
+*************************************************************************************/
+.footer-heading.section-heading {
+	letter-spacing: 2px;
+	display: inline-block;
+}
+.footer-heading-right.section-heading {
+	letter-spacing: 2px;
+	display: inline-block;
+	padding-left: 120px;
+}
+.footer-container input[type="email"] {
+	border: 2px solid #fff;
+	background: none;
+	outline: none!important;
+	padding: 7px 15px 5px;
+	color: #fff !important;
+	text-transform: uppercase;
+	font-family: 'Cabin', sans-serif;
+	text-align: center;
+	border-radius: 0;
+	margin-bottom: 20px;
+	width: 80%;
+	height: 27px;
+	font-size: 16px;
+	margin-left: -100px;
+}
+.footer-container .btn-ml-submit {
+	border: 2px solid #fff;
+	background: none;
+	outline: none!important;
+	padding: 7px 15px 5px;
+	margin-left: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Cabin', sans-serif;
+	text-align: center;
+	border-radius: 0;
+	margin-bottom: 20px;
+	height: 43px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+}
+.footer-container .btn-ml-submit:hover {
+	color: #BABABA;
+}
+.footer-container {
+	padding-left: 100px;
+}
+.footer-list {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 60%;
+	text-align: left;
+}
+.footer-side-left {
+	width: 50%;
+	float: left;
+}
+.footer-side-right {
+	width: 50%;
+	float: left;
+}
+.footer-credits .container {
+	background-color: #BABABA;
+}
+.footer.page {
+	position: relative;
+}
+.credits-content {
+	text-align: center;
+	padding: 20px;
+	font-size: 12px;
+	line-height: 1.6em;
+	color: #000;
+}
+.credits-content a {
+	text-decoration: none;
+	color: #000;
+}
+.credits-content a:hover {
+	color: #262626;
+}
+#main-footer {
+	background-color: #262626;
+	text-transform: uppercase;
+}
+form {
+	display: block;
+}
+/************************************************************************************
+FOOTER NAV
+*************************************************************************************/
+#footer-menu {
+	list-style: none;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+#footer-menu li {
+	display: inline-block;
+	text-align: center;
+	padding-left: 10px;
+}
+#footer-menu li a {
+	margin-right: 10px;
+}
+#footer-menu a {
+	color: #fff;
+	text-decoration: underline;
+	font-size: 14px;
+}
+#footer-menu a:hover {
+	color: #BABABA;
+}
+.footer-nav {
+	text-align: center;
+	display: block;
+}
+/************************************************************************************
+SOCIAL MEDIA ICON
+*************************************************************************************/
+.social-icons a {
+	color: #fff;
+}
+.social-icons {
+	list-style: none;
+	margin-bottom: -5%;
+	padding-left: 0px;
+}
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	float: left;
+}
+.fa:hover {
+	background-color: #121212;
+}
+.fa-facebook {
+	padding: 10px 18px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+	background-color: #262626;
+}
+.fa-twitter {
+	padding: 10px 12px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+	background-color: #262626;
+}
+.fa-instagram {
+	padding: 10px 12px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+	background-color: #262626;
+}
+.fa-snapchat-ghost {
+	padding: 10px 12px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+	background-color: #262626;
+}
+.fa-youtube {
+	padding: 10px 12px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+	background-color: #262626;
+}
+
+::-webkit-input-placeholder {
+ color: #fff;
+font-style: normal!important;
+}
+::-moz-placeholder {
+color: #fff;
+font-style: normal;
+opacity: 1;
+} /* Firefox 19 lowers the opacity of the placeholder to 0.54 by default */
+::-ms-input-placeholder {
+color: #fff;
+font-style: normal;
+}
+/************************************************************************************
+INFO PAGE
+*************************************************************************************/
+.hero-image-header {
+	height: 60vh;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.hero-text-header {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.content-text {
+	max-width: 800px;
+	line-height: 1.6em;
+	text-align: justify;
+	position: relative;
+	margin: 0 auto;
+}
+br {
+	line-height: 2em;
+}
+.content-text-title {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding: 25px;
+	font-size: 22px;
+}
+.content-body {
+	margin-bottom: 20px;
+}
+/************************************************************************************
+TOUR PAGE
+*************************************************************************************/
+.tour-hero.hero-image-header {
+	height: 60vh;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+/************************************************************************************
+VIDEOS PAGE
+*************************************************************************************/
+.videos-hero.hero-image-header {
+	height: 60vh;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.video-container {
+	padding-top: 20px;
+	width: 100%;
+	margin: 20px auto;
+	height: 100%;
+}
+.video-wrapper {
+	margin: 20px auto;
+}
+.video-wrapper iframe {
+	width: 100%;
+}
+.video-title {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 15px;
+	margin-top: -20px;
+	padding-bottom: 10px;
+}
+/************************************************************************************
+MUSIC PAGE
+*************************************************************************************/
+.music-hero.hero-image-header {
+	height: 60vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.music-page.album {
+	padding-top: 50px;
+}
+.album-art.buy-links {
+	margin: 30px 0;
+}
+.buy-links a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin: 0px 10px;
+	letter-spacing: 3px;
+}
+.buy-links a:hover {
+	color: #BABABA;
+}
+.album-art img {
+	width: 400px;
+	height: 400px;
+}
+/************************************************************************************
+GALLERY PAGE
+*************************************************************************************/
+.image-container {
+	padding: 10px;
+	display: inline-block;
+	width: 40%;
+}
+.gallery-container {
+	/*	width: 60%;*/
+	text-align: center;
+	margin: 5vw auto;
+	display: inline-block;
+}
+.gallery-container img {
+	display: inline-block;
+	width: 80%;
+	height: auto;
+}
+#logo-small {
+	width: 300px;
+}
+/************************************************************************************
+MEDIA PAGE
+*************************************************************************************/
+
+.media-hero.hero-image-header {
+	height: 60vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.media.section-heading li {
+	list-style: none;
+	padding: 30px 0;
+}
+.section-heading a {
+	color: #fff;
+	font-size: 50px;
+	border-bottom: 1px solid #fff;
+}
+.section-heading a:hover {
+	color: #BABABA
+}
+/************************************************************************************
+SUBSCRIBE PAGE
+*************************************************************************************/
+.subscribe {
+	display: block;
+	width: 100%;
+}
+.subs-signup form {
+	text-align: center;
+	padding-left: 0 !important;
+}
+.subscribe input[type="email"] {
+	border: 2px solid #fff;
+	background: none;
+	text-align: center;
+	width: 80%;
+	outline: none;
+	padding: 7px 15px 5px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Cabin', sans-serif;
+	border-radius: 0;
+	margin-bottom: 20px;
+	height: 27px;
+	font-size: 16px;
+	padding-left: 0;
+}
+.subscribe .btn-submit {
+	border: 2px solid #fff;
+	background: none;
+	outline: none!important;
+	padding: 7px 15px 5px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Cabin', sans-serif;
+	text-align: center;
+	border-radius: 0;
+	margin-bottom: 20px;
+	width: 20%;
+	height: 43px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+}
+.subscribe .subs-name {
+	border: 2px solid #fff;
+	background: none;
+	text-align: center;
+	width: 80%;
+	outline: none;
+	padding: 7px 15px 5px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Cabin', sans-serif;
+	border-radius: 0;
+	margin-bottom: 20px;
+	height: 27px;
+	font-size: 16px;
+	padding-left: 0;
+}
+.subscribe .subs-message {
+	border: 2px solid #fff;
+	background: none;
+	text-align: center;
+	width: 80%;
+	outline: none;
+	padding: 7px 15px 100px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Cabin', sans-serif;
+	border-radius: 0;
+	margin-bottom: 20px;
+	height: 27px;
+	font-size: 16px;
+	padding-left: 0;
+}
+
+/************************************************************************************
+TABLET
+*************************************************************************************/
+@media only screen and (max-width: 800px) {
+.music-hero.hero-image-header, .info-hero.hero-image-header, .tour-hero.hero-image-header, .gallery-hero.hero-image-header, .videos-hero.hero-image-header, .contact-hero.hero-image-header, .media-hero.hero-image-header {
+	height: 300px;
+}
+.hero-image {
+	background-position: left;
+}
+.all-button .btn-default {
+	width: 35%;
+	height: auto;
+	position: relative;
+	display: inline-block;
+}
+.top-nav {
+	display: block;
+	font-size: 16px;
+	position: fixed;
+	background: #121212;
+	opacity: 0.95;
+	height: 65px;
+}
+.section-heading {
+	width: 70%;
+	padding: 15px 0 0 0;
+	text-align: center;
+	margin: 0 auto
+}
+.media.section-heading a {
+	font-size: 35px;
+}
+.media.section-heading li {
+	padding: 20px 0;
+}
+.event-list {
+	width: 100%;
+}
+.content-text {
+	width: 70%;
+	margin: 0 auto;
+}
+#logo-small {
+	width: 210px;
+	height: 43px;
+}
+/************************************************************************************
+TABLET TOP NAV
+*************************************************************************************/
+
+.icon {
+	position: fixed;
+	top: 16px;
+	left: 93%;
+	width: 36px;
+	height: 32px;
+	cursor: pointer;
+}
+.hamburger-menu {
+	width: 35px;
+	height: 3px;
+	background: #fff;
+	position: absolute;
+	top: 15px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	display: inline-block;
+}
+.hamburger-menu:before, .hamburger-menu:after {
+	content: '';
+	position: absolute;
+	width: 35px;
+	height: 3px;
+	background: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.hamburger-menu:before {
+	top: -10px;
+}
+.hamburger-menu:after {
+	top: 10px;
+}
+.icon.active .hamburger-menu {
+	background: rgba(0,0,0,0);
+	box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+.icon.active .hamburger-menu:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+.icon.active .hamburger-menu:after {
+	top: 0;
+	transform: rotate(135deg);
+}
+/************************************************************************************
+TABLET SUB-NAV 
+*************************************************************************************/
+	
+ul.sub-menu.open {
+	margin: 0;
+	top: -20%;
+	width: 90%;
+	height: 135px;
+}
+header nav ul li.dropdown {
+	display: block;
+}
+header nav ul li.dropdown:hover {
+	display: block;
+}
+header nav ul li.dropdown .sub-menu {
+	width: 100%;
+	position: static;
+	display: block;
+}
+.sub-menu li {
+	clear: both;
+	left: 5%;
+}
+header nav ul li.dropdown .sub-menu li a {
+	width: 92%;
+}
+header nav ul {
+	overflow: hidden;
+	background-color: #121212;
+	height: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+header nav ul.open {
+	height: auto;
+	width: 100%;
+	top: 90%;
+}
+header nav ul li {
+	float: none;
+	text-align: left;
+	width: 93%;
+	margin: 0;
+}
+header nav ul li a {
+	color: #fff;
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+	display: block;
+	margin: 0;
+	font-size: 20px !important;
+	font-weight: 600;
+}
+header nav li {
+	margin: 0 auto;
+}
+header nav li ul li a {
+	left: 100px;
+}
+.top-nav a {
+	float: none;
+	display: block;
+}
+.menu {
+	right: 0;
+}
+.menu li {
+	margin: 0 auto;
+}
+#head-container .logo {
+	position: absolute;
+	display: inline-block;
+	top: 10px;
+	left: 20px !important;
+}
+#head-container {
+	float: left;
+}
+.section-heading h2 {
+	text-align: center;
+}
+/************************************************************************************
+GALLERY PAGE - TABLET
+*************************************************************************************/	
+.gallery-container {
+	/*		text-align: center;*/
+	align-content: center;
+	align-items: center;
+	/*		display: inline-flex;*/
+	display: block;
+}
+.image-container {
+	display: inline-block;
+	width: 45%;
+}
+/************************************************************************************
+TABLET HEADING - PAGE LAYOUT
+*************************************************************************************/
+	
+.section-heading #tour-page-heading {
+	display: none;
+}
+.hero-text-header > h1 {
+	font-size: 48px;
+}
+.hero-text > h1 {
+	font-size: 65px;
+}
+/************************************************************************************
+TABLET TOUR PAGE
+*************************************************************************************/
+.event-date, .event-location, .event-venue, .event-tickets {
+	font-size: 14px;
+}
+.event-date {
+	padding: 10px 0;
+	width: 1%;
+}
+.table-row {
+	display: block;
+	text-align: center;
+}
+.event-location, .event-venue {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+}
+.event-tickets {
+	width: 100%;
+	padding: 10px 0;
+}
+/************************************************************************************
+TABLET MUSIC PAGE
+*************************************************************************************/	
+	
+.album-art img {
+	width: 90%;
+	height: auto;
+}
+.album-art {
+	padding-top: 20px;
+}
+.music-page.album {
+	padding-top: 20px;
+	font-size: 14px;
+}
+.buy-links a {
+	font-size: 14px;
+}
+/************************************************************************************
+TABLET FOOTER
+*************************************************************************************/
+.footer-side-right {
+	display: block;
+	float: none;
+	overflow: visible;
+	width: 100%;
+}
+.footer-side-left {
+	display: block;
+	float: none;
+	overflow: visible;
+	width: 100%;
+}
+.footer-heading.section-heading {
+	width: 100%;
+	text-align: center;
+}
+.footer-heading-right.section-heading h4 {
+	text-align: center;
+	padding: 0;
+}
+.footer-heading-right.section-heading {
+	padding: 0;
+	width: 100%;
+}
+.social-icons {
+	text-align: center;
+	width: 50%;
+	margin-left: 15%;
+	position: relative;
+	display: block;
+}
+.social-icons li a {
+	display: block;
+	width: 100%;
+	margin: 0 auto !important;
+	background-color: red !important;
+}
+.footer-container {
+	display: block;
+	width: 100%;
+	padding-left: 0;
+}
+.footer-container .btn-ml-submit {
+	position: relative;
+	width: 88%;
+	text-align: center;
+	margin: 0 auto;
+}
+form {
+	text-align: center;
+	padding: 0;
+}
+.footer-list {
+	width: 60%;
+	margin: 0 auto;
+}
+.footer-container input[type="email"] {
+	display: block;
+	text-align: center;
+	width: 80%;
+	margin: 10px auto;
+}
+.footer-side-right .footer-container > ul {
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+.footer-nav {
+	display: none;
+}
+/************************************************************************************
+TABLET VIDEO PAGE
+*************************************************************************************/	
+	
+.video-wrapper iframe {
+	position: relative;
+	width: 100%;
+}
+.video-container {
+	width: 80%;
+	height: 100%;
+	margin: 20px auto;
+}
+.video-wrapper {
+	margin: 20px auto;
+}
+}
+
+/************************************************************************************
+MOBILE
+*************************************************************************************/
+
+@media only screen and (max-width: 480px) {
+.music-hero.hero-image-header, .info-hero.hero-image-header, .tour-hero.hero-image-header, .gallery-hero.hero-image-header, .videos-hero.hero-image-header, .contact-hero.hero-image-header, .media-hero.hero-image-header {
+	height: 250px;
+}
+.section-heading {
+	line-height: 3em;
+	text-align: center;
+}
+#head-container .logo {
+	display: block;
+}
+.hero-text > h1 {
+	display: block;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+#text-tour {
+	line-height: 1.5em;
+}
+#year {
+	text-align: center;
+	margin-left: 10px;
+	font-size: 38px;
+}
+/************************************************************************************
+MOBILE TOP NAV
+*************************************************************************************/	
+.icon {
+	position: fixed;
+	top: 10px;
+	left: 90%;
+	width: 36px;
+	height: 32px;
+	cursor: pointer;
+}
+.hamburger-menu {
+	width: 30px;
+	height: 3px;
+	background: #fff;
+	position: absolute;
+	top: 15px;
+	right: 20%;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	display: inline-block;
+}
+.hamburger-menu:before, .hamburger-menu:after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.hamburger-menu:before {
+	top: -10px;
+}
+.hamburger-menu:after {
+	top: 10px;
+}
+.hamburger {
+	background: url(../images/hamburger.svg) no-repeat 98% center;
+	display: block;
+	/*		float: right;*/
+	z-index: 1000;
+	cursor: pointer;
+	position: fixed;
+	left: 90%;
+	width: 30px;
+	height: 22px;
+	top: 16px;
+}
+header nav ul {
+	overflow: hidden;
+	background-color: #121212;
+	height: 0;
+}
+header nav ul.open {
+	height: auto;
+	width: 100%;
+	top: 65%;
+}
+header nav ul li {
+	float: none;
+	text-align: left;
+	width: 93%;
+	margin: 0;
+}
+header nav ul li a {
+	color: #fff;
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+	display: block;
+	margin: 0;
+	font-size: 20px !important;
+	font-weight: 600;
+}
+header nav ul li.dropdown .sub-menu li a {
+	width: 85%;
+}
+#logo-small {
+	width: 180px;
+	height: 36px;
+}
+.all-button .btn-default {
+	width: 80%;
+	height: auto;
+	position: relative;
+	display: inline-block;
+}
+.content-text {
+	width: 80%;
+	margin: 0 auto;
+	line-height: 2px;
+}
+.content-text p {
+	line-height: 1.5em;
+	font-size: 14px;
+}
+.content-text-title {
+	text-align: center;
+}
+/************************************************************************************
+MOBILE MUSIC PAGE
+*************************************************************************************/
+	
+.music-page.album .album-title {
+	display: block;
+	padding-bottom: 0;
+}
+.music-page.album {
+	padding: 0;
+}
+.buy-links a {
+	font-size: 12px;
+	display: block;
+}
+.album-art {
+	padding-top: 20px;
+}
+.album-art img {
+	width: 250px;
+	height: 250px;
+}
+.event-list {
+	width: 100%;
+}
+.image-container {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+/************************************************************************************
+MOBILE FOOTER
+*************************************************************************************/
+.footer-side-right {
+	display: block;
+	float: none;
+	overflow: visible;
+	width: 100%;
+}
+.footer-side-left {
+	display: block;
+	float: none;
+	overflow: visible;
+	width: 100%;
+}
+.footer-heading.section-heading {
+	width: 100%;
+	text-align: center;
+}
+.footer-heading-right.section-heading h4 {
+	text-align: center;
+	padding: 0;
+}
+.footer-heading-right.section-heading {
+	padding: 0;
+	width: 100%;
+	margin-bottom: -40%;
+}
+.social-icons {
+	text-align: center;
+	padding: 0;
+}
+.footer-container {
+	display: block;
+	width: 100%;
+}
+.footer-container .btn-ml-submit {
+	display: block;
+	width: 81%;
+	text-align: center;
+	margin-left: 10%;
+}
+form {
+	text-align: center;
+	padding: 0;
+}
+.footer-container input[type="email"] {
+	width: 80%;
+	margin-left: 10%;
+	display: block;
+	text-align: center;
+	padding: 7px 0px 5px;
+}
+.footer-container > ul {
+	width: 100%;
+	text-align: center;
+	margin: 20px auto;
+	left: 10%;
+	padding-bottom: 50px;
+}
+ul.social-icon {
+	margin: 0 auto;
+}
+.footer-list {
+	width: 100%;
+}
+.footer-nav {
+	display: none;
+}
+.footer-container ul {
+	margin: 0 auto;
+}
+/************************************************************************************
+MOBILE VIDEOS PAGE
+*************************************************************************************/
+	
+.video-container {
+	width: 80%;
+}
+.video-wrapper iframe {
+	top: 0;
+	left: 0;
+	height: 50%;
+	width: 100%;
+}
+/************************************************************************************
+MOBILE MEDIA PAGE
+*************************************************************************************/
+	
+.media.section-heading li {
+	padding: 5px 0;
+}
+/************************************************************************************
+MOBILE SUBSCRIBE PAGE
+*************************************************************************************/	
+.subscribe .btn-submit {
+	padding: 7px 10px 5px;
+}
+}
+
+/************************************************************************************
+MEDIA PRINT
+*************************************************************************************/
+@media print {
+body {
+	font-family: 'Cabin', sans-serif;
+	background-color: #121212;
+	color: #FDFDFD;
+	line-height: 1.6em;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+h1 {
+	font-size: 24pt;
+}
+h2 {
+	font-size: 14pt;
+	margin-top: 25px;
+}
+aside h2 {
+	font-size: 18pt;
+}
+header nav, footer {
+	display: none;
+}
+img {
+	max-width: 500px;
+}
+@page {
+	margin: 0.5cm;
+}
+ @page :left {
+margin: 0.5cm;
+}
+ @page :right {
+margin: 0.8cm;
+}
+ @page :first {
+ margin: 1cm 2cm;
+}
+ul {
+	list-style: none
+}
+li {
+	content: "» ";
+}
+.container {
+	display: none;
+}
+.page-event {
+	padding: 0;
+	margin: 0 auto;
+}
+.table-row {
+	width: 100%;
+}
+.event-container {
+	/*		display: block;*/
+	padding-right: 10px;
+	margin: 0 auto;
+}
+.event-date {
+	/*		padding: 0;*/
+	width: 18%;
+	text-align: center;
+}
+.music-page.album {
+	margin: 0 auto;
+	padding: 20px;
+}
+.grey-bar {
+	display: none;
+}
+.event-list {
+	margin: 0 auto;
+	padding-right: 10px;
+}
+}
